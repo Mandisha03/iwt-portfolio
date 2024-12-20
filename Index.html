@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandisha Mirza - About Me</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        [data-theme="dark"] {
+            color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #d4f7d4;
+        }
+
+        /* Main Section */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #000;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+        }
+
+        ul, p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style: disc inside;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+      footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #00c4ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="mandisha.jpg" alt="Mandisha Mirza" style="width: 100px; height: 100px; border-radius: 50%;">
+            <h1>Mandisha Mirza</h1>
+        </div>
+        <nav style="margin-left: auto; display: flex; gap: 20px;">
+            <a href="Index.html" style="color: white; text-decoration: none; font-weight: bold;">About</a>
+            <a href="Index2.html" style="color: white; text-decoration: none; font-weight: bold;">Projects</a>
+            <a href="contact-3.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Mandisha Mirza, a dedicated and passionate Computer Science student at Acropolis Institute of Technology & Research, Indore. I specialize in front-end development and have experience in creating both static and dynamic websites. My objective is to grow as a professional while contributing to impactful projects.</p>
+        </section>
+
+        <section id="personal-details">
+            <h2>Personal Details</h2>
+            <ul>
+                <li><strong>Date of Birth:</strong> December 3, 2004</li>
+                <li><strong>Gender:</strong> Female</li>
+                <li><strong>Nationality:</strong> Indian</li>
+                <li><strong>Languages Known:</strong> Hindi, English, Urdu</li>
+                <li><strong>Address:</strong> ********, Ujjain, M.P. 452002</li>
+                <li><strong>Contact:</strong> +91 **********</li>
+                <li><strong>Email:</strong> mandishamirza@gmail.com</li>
+            </ul>
+        </section>
+
+        <section id="academic-record">
+            <h2>Academic Record</h2>
+            <ul>
+                <li>Pursuing Bachelor of Technology in Computer Science from Acropolis Institute of Technology & Research, Indore (2023-2026) - Current Average: 6.81%</li>
+                <li>Diploma in Information Technology from Government Polytechnic College, Ujjain with CGPA 8.05</li>
+                <li>High School Certificate (10th) from Delhi Public School, Ujjain - 82.3% in 2020</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Static Website Development:</strong> Created a college website using HTML, CSS, and JavaScript during industrial training at Government Polytechnic College, Ujjain.</li>
+                <li><strong>Bus Management Tracking System:</strong> Ongoing project as a front-end developer at Acropolis Institute of Technology & Research, Indore.</li>
+                <li><strong>Dynamic Face Recognition System:</strong> Developed a dynamic website with a focus on documentation and testing at Government Polytechnic College, Ujjain.</li>
+            </ul>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Singing</li>
+                <li>Photography</li>
+                <li>Calligraphy</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mandisha Mirza. All rights reserved.</p>
+        <p>Connect with me on <a href="mailto:mandishamirza@gmail.com">Email</a></p>
+        <p>Contact me: +91 **********</p>
+    </footer>
+</body>
+</html>

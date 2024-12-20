@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandisha Mirza - Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        [data-theme="dark"] {
+            background-color: #757476;
+            color: #f9f9f9;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #d4f7d4;
+        }
+        
+        /* Main Section */
+        main {
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+            display: inline-block;
+        }
+
+        /* About Section */
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-top: 10px;
+        }
+
+        /* Projects Section */
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            width: calc(33% - 20px);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); ;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            font-size: 1.4rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            color: white;
+            background-color: #000000;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .project-card a:hover {
+            background-color: #000000;
+        }
+
+
+        /* Contact Section */
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        #contact-form label {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        #contact-form input, #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #contact-form button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact-form button:hover {
+            background-color: #000000;
+        }
+
+        /* Footer */
+        footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #00c4ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <!-- Header Logo with Higher Resolution -->
+            <img src="mandisha.jpg" alt="Logo" style="width: 100px; height: 100px; border-radius: 50%;">
+        
+
+            <h1>Mandisha Mirza</h1>
+        </div>
+        <!-- Navigation Links -->
+        <nav style="margin-left: auto; display: flex; gap: 20px;">
+            <a href="about me.html" style="color: white; text-decoration: none; font-weight: bold;">About</a>
+            <a href="project.html" style="color: white; text-decoration: none; font-weight: bold;">Projects</a>
+            <a href="contact-3.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1 Image">
+                    <h3>Project 1</h3>
+                    <p><b>Static Website Development</b><br>
+                        "Developed a static college website using HTML, CSS, and JavaScript during industrial training at Government Polytechnic College, Ujjain."</p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2 Image">
+                    <h3>Project 2</h3>
+                    <p><b>Bus Management Tracking System</b><br>
+                        "Worked as a front-end developer on an ongoing Bus Management Tracking System project, focusing on user interface design and functionality."</p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3 Image">
+                    <h3>Project 3</h3>
+                    <p><b>Dynamic Face Recognition System</b><br>
+                        "Created a dynamic website for a face recognition system, contributing to documentation, testing, and implementation."</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mandisha Mirza. All rights reserved.</p>
+        <p>Connect with me on <a href="mailto:mandishamirza@gmail.com">Email</a></p>
+        <p>Contact me: +91 **********</p>
+    </footer>
+</body>
+</html>

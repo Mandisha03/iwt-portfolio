@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandisha Mirza - Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        [data-theme="dark"] {
+            background-color: #757476;
+            color: #f9f9f9;
+        }
+
+       
+        /* Header */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #d4f7d4;
+        }
+
+        /* Main Section */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #000000;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+        }
+
+        ul, p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style: disc inside;
+            margin-top: 10px;
+        }
+
+        /* Contact Section */
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        #contact-form label {
+            font-size: 1rem;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+        #contact-form input, #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #070707;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #contact-form button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact-form button:hover {
+            background-color: #000000;
+        }
+
+        /* Footer */
+        footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <!-- Header Logo with Higher Resolution -->
+            <img src="mandisha.jpg" alt="Logo" style="width: 100px; height: 100px; border-radius: 50%;">
+            <h1>Mandisha Mirza</h1>
+        </div>
+        <!-- Navigation Links -->
+        <nav style="margin-left: auto; display: flex; gap: 20px;">
+            <a href="Index.html" style="color: white; text-decoration: none; font-weight: bold;">About</a>
+            <a href="Index2.html" style="color: white; text-decoration: none; font-weight: bold;">Projects</a>
+            <a href="contact-3.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mandisha Mirza. All rights reserved.</p>
+        <p>Connect with me on <a href="mailto:mandishamirza@gmail.com">Email</a></p>
+        <p>Contact me: +91 **********</p>
+    </footer>
+</body>
+</html>
